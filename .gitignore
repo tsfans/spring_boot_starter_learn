@@ -32,6 +32,7 @@ hs_err_pid*
 #*.xsl
 #*.xlsx
 #*.pdf
+mvnw*
 logs/
 target/
 src/main/webapp/WEB-INF/classes/
