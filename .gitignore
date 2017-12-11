@@ -32,9 +32,9 @@ hs_err_pid*
 #*.xsl
 #*.xlsx
 #*.pdf
-mvnw*
+.springBeans
 logs/
 target/
-src/main/webapp/WEB-INF/classes/
-src/main/webapp/WEB-INF/lib/
+src/main/webapp/WEB-INF/classes/*
+src/main/webapp/WEB-INF/lib/*
 
