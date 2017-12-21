@@ -20,7 +20,7 @@ public class Application{
 	
 	@RequestMapping("/say")
 	public String say() {
-		return "hello world!";
+		return "say hello!";
 	}
 
 	public static void main(String[] args) {
