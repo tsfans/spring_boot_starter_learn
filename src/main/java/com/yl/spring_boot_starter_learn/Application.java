@@ -12,6 +12,7 @@ import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletCon
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.yl.spring_boot_starter_learn.domain.Person;
@@ -26,7 +27,7 @@ public class Application{
 	public String say() {
 		return "say hello!";
 	}
-	@RequestMapping(value="/search",produces= {MediaType.APPLICATION_JSON_VALUE})
+	@RequestMapping(value="/search",produces= {MediaType.APPLICATION_JSON_VALUE},method=RequestMethod.GET)
 	public Person search(String personName) {
 		return new Person(personName,24,"shenzheng");
 	}

@@ -12,6 +12,9 @@
 	padding: 100px 15px;
 	text-align: center;
 }
+ul{
+    list-style : none;
+}
 </style>
 </head>
 <body>
@@ -19,14 +22,14 @@
 		<div class="container">
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="navbar navbar-nav">
-                    <li><a href="#oper">后台交互</a></li>
-                    <li><a href="#directive">自定义指令</a></li>
+                    <li><a href="#/oper">后台交互</a></li>
+                    <li><a href="#/directive">自定义指令</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<div class="content">
-         <div ng-view/>
+	<div ng-view></div>
 	</div>
 	<script src="/js/jquery.min.js"></script>
 	<script src="/jquery-ui-1.12.1/jquery-ui.min.js"></script>
