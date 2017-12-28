@@ -29,7 +29,7 @@ public class Application{
 	}
 	@RequestMapping(value="/search",produces= {MediaType.APPLICATION_JSON_VALUE},method=RequestMethod.GET)
 	public Person search(String personName) {
-		return new Person(personName,24,"shenzheng");
+		return new Person(1,personName,24,"shenzheng");
 	}
 
 	public static void main(String[] args) {

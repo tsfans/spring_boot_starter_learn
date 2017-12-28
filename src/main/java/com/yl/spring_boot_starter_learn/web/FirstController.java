@@ -14,11 +14,11 @@ public class FirstController {
 
 	@RequestMapping("/toIndex")
 	public String toIndex(Model model) {
-		Person p1 = new Person("aa",11,"shenzheng");
-		Person p2 = new Person("bb",22,"shenzheng");
-		Person p3 = new Person("cc",33,"shenzheng");
-		Person p4 = new Person("dd",44,"shenzheng");
-		Person p5 = new Person("ee",55,"shenzheng");
+		Person p1 = new Person(1,"aa",11,"shenzheng");
+		Person p2 = new Person(2,"bb",22,"shenzheng");
+		Person p3 = new Person(3,"cc",33,"shenzheng");
+		Person p4 = new Person(4,"dd",44,"shenzheng");
+		Person p5 = new Person(5,"ee",55,"shenzheng");
 		List<Person> plist = new ArrayList<Person>();
 		plist.add(p1);
 		plist.add(p2);

@@ -1,39 +1,24 @@
 package com.yl.spring_boot_starter_learn.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.NamedQuery;
+import javax.validation.constraints.Size;
 
-@Entity
-@NamedQuery(name="Person.withNameAndAddressNamedQuery",
-query="select p from Person p where p.name=?1 and address=?2")
-public class Person {
+public class People {
 
-	@Id
-	@GeneratedValue
-	private long id;
-	
+	@Size(max=4,min=2)
 	private String name;
 	
 	private Integer age;
 	
+	private String nation;
+	
 	private String address;
-    public Person() {}
-	public Person(long id,String name, Integer age,String address) {
+    public People() {}
+	public People(String name, Integer age, String nation, String address) {
 		super();
-		this.id = id;
 		this.name = name;
 		this.age = age;
+		this.nation = nation;
 		this.address = address;
-	}
-	
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
 	}
 
 	public String getName() {
@@ -52,6 +37,14 @@ public class Person {
 		this.age = age;
 	}
 
+	public String getNation() {
+		return nation;
+	}
+
+	public void setNation(String nation) {
+		this.nation = nation;
+	}
+
 	public String getAddress() {
 		return address;
 	}
@@ -59,4 +52,5 @@ public class Person {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	
 }
